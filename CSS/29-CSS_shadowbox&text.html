@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex
+        }
+        .card{
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            background-color: antiquewhite;
+            /*            offset x   offset y   blur-radius   spread-radius   color*/
+            /* box-shadow: -10px 13px 10px 5px gray; */
+
+            box-shadow: inset 30px 30px 30px 30px rgb(116, 116, 119);
+        }
+        .card h2{
+            text-shadow: 2px 2px 2px whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Python</h2>
+            <p>Hello  i am python developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit beatae nobis eius voluptas, eaque modi asperiores possimus consequatur nesciunt aut esse maxime!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure error ducimus quia deserunt inventore minima, laboriosam perspiciatis. Sed doloribus similique fugit voluptatibus veritatis.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa assumenda. Eius tempore impedit, earum itaque quisquam nihil sed reiciendis! Debitis, corporis id..</p>
+        </div>
+    </div>
+</body>
+</html>

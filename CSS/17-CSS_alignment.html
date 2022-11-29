@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            width: 900px;
+            border: 5px solid purple;
+            margin: auto;
+        }
+        .item{
+            border: 3px solid gray;
+            margin: 12px 12px;
+            padding: 12px 12px;
+            background: yellowgreen;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+
+        }
+        #computer{
+            float: left;
+            width: 48%;
+
+        }
+        #stationary{
+            /* float: left; */
+            clear:both;
+            width: 97.3%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus omnis distinctio quos odit, laudantium veritatis a vitae ipsam illum velit maxime minima. Quibusdam eligendi deserunt deleniti magni similique, pariatur veniam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, mollitia incidunt porro officia aliquam magnam! Similique, est inventore modi aut sed veritatis laboriosam iure perspiciatis repellat facilis nobis earum molestiae laborum impedit.</p>
+        </div>
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus omnis distinctio quos odit, laudantium veritatis a vitae ipsam illum velit maxime minima. Quibusdam eligendi deserunt deleniti magni similique, pariatur veniam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatum maiores doloremque expedita amet. Velit numquam quo eligendi praesentium in? Non sed nisi quo modi repudiandae velit placeat voluptatem quis fugiat omnis?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus omnis distinctio quos odit, laudantium veritatis a vitae ipsam illum velit maxime minima. Quibusdam eligendi deserunt deleniti magni similique, pariatur veniam?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus omnis distinctio quos odit, laudantium veritatis a vitae ipsam illum velit maxime minima. Quibusdam eligendi deserunt deleniti magni similique, pariatur veniam?</p>
+        </div>
+    </div>
+</body>
+</html>

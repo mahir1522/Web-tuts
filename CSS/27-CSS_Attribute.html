@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child psesudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target]{
+            color: aquamarine;
+            font-size: 36px;
+        }
+        a[target='_self']{
+            color: cadetblue;
+            font-size: 34px;
+        }
+        /* this will apply css for fourth child */
+        /* li:nth-child(4){
+            color: rgb(124, 10, 230);
+            border: 3px solid orange;
+            }
+
+            li:nth-child(2n-1){
+                color: red;
+            } */
+            li:nth-child(even){
+                color: aqua;
+                background-color: red;
+            }
+            li:nth-child(odd){
+                color: red;
+                background-color: aqua;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="https://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item1">item1</li>
+            <li class="item2">item2</li>
+            <li class="item3">item3</li>
+            <li class="item4">item4</li>
+            <li class="item5">item5</li>
+            <li class="item6">item6</li>
+        </ul>
+    </div>
+</body>
+</html>
